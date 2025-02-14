@@ -1,0 +1,413 @@
+$bg: #FEFBF1;
+$text: #703412;
+$footer: #084935;
+$white: white;
+$here: rgba(255, 255, 255, 0.72);
+
+body {
+  background-color: $bg;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.headerul,
+.headerli {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.headerul,
+.headerli a {
+  text-decoration: none;
+  color: $text;
+  background-color: $bg;
+  transition: all 0.5s;
+}
+
+.headerli a:hover {
+  background-color: $text;
+  color: $bg;
+  padding: 8px;
+  border-radius: 8px;
+  transform: scale(1.02);
+  border: 2px double $text;
+  outline: 2px solid $text;
+  outline-offset: 10px;
+}
+
+header p,
+.pp {
+  color: $text;
+}
+
+.h00 {
+  position: absolute;
+  width: 848px;
+  height: 264px;
+  left: 72px;
+  top: 185px;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 88px;
+  color: $text;
+  display: flex;
+}
+
+.pp {
+  margin-top: 120px;
+  margin-left: 72px;
+  font-size: 11px;
+  letter-spacing: 1.6px;
+  display: flex;
+}
+
+main h1 {
+  position: absolute;
+  width: 571px;
+  height: 125px;
+  left: 72px;
+  top: 637px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  color: $text;
+  display: flex;
+}
+
+.footer {
+  background-color: $footer;
+  color: $white;
+  position: absolute;
+  width: 100%;
+  height: 644px;
+  left: 0px;
+  top: 2574px;
+}
+
+.footp {
+  position: absolute;
+  width: 69px;
+  height: 18px;
+  left: 72px;
+  top: 120px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1.6px;
+  color: $white;
+}
+
+.hh3 {
+  position: absolute;
+  width: 711px;
+  height: 39px;
+  left: 72px;
+  top: 162px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: $white;
+}
+
+.hh4 {
+  position: absolute;
+  width: 494px;
+  height: 39px;
+  left: 72px;
+  top: 200px;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 38px;
+  color: $white;
+}
+
+.hh5 {
+  position: absolute;
+  width: 57px;
+  height: 39px;
+  left: 566px;
+  top: 200px;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 38px;
+  color: $here;
+}
+
+.hh6 {
+  position: absolute;
+  width: 102px;
+  height: 39px;
+  left: 623px;
+  top: 200px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: $white;
+}
+
+hr {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0px;
+  top: 574px;
+  color: $here;
+  border-radius: 0px;
+}
+
+.footerpl1 {
+  position: absolute;
+  width: 169px;
+  height: 24px;
+  left: 72px;
+  top: 594px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $white;
+}
+
+.lastl {
+  position: absolute;
+  height: 24px;
+  left: 72px;
+  top: 349px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $here;
+}
+
+.lastl1 {
+  position: absolute;
+  height: 24px;
+  left: 600px;
+  top: 349px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $here;
+}
+
+.lastl2 {
+  position: absolute;
+  height: 24px;
+  left: 1200px;
+  top: 349px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $here;
+}
+
+.lastl3 {
+  position: absolute;
+  width: 95px;
+  height: 24px;
+  left: 1600px;
+  top: 349px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $here;
+}
+
+.imagge2 img {
+  position: absolute;
+  width: 312px;
+  height: 310px;
+  left: 372px;
+  top: 956px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+.imagge3 img {
+  position: absolute;
+  width: 312px;
+  height: 310px;
+  left: 744px;
+  top: 956px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+.imagge4 img {
+  position: absolute;
+  width: 312px;
+  height: 310px;
+  left: 11px;
+  top: 956px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+.imagge5 img {
+  position: absolute;
+  width: 312px;
+  height: 310px;
+  left: 1116px;
+  top: 956px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+.imagge6 img {
+  position: absolute;
+  width: 312px;
+  height: 310px;
+  left: 1488px;
+  top: 956px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+.photo {
+  transition: all 0.5s;
+  opacity: 80%;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.about,
+.mission,
+.vision {
+  border-radius: 10px;
+  background-color: $text;
+  color: $bg;
+  padding: 80px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-in-out;
+  will-change: opacity, transform;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .about-title,
+  .mission-title,
+  .vision-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .about-text,
+  .mission-text,
+  .vision-text {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  &:hover {
+    transition: transform 0.5s;
+    transform: scale(1.05);
+  }
+}
+
+.about {
+  margin-top: 1140px;
+}
+
+.mission {
+  margin-top: 60px;
+}
+
+.vision {
+  margin-top: 60px;
+}
+
+// Медиазапросы для адаптации под мобильные устройства
+@media (max-width: 1024px) {
+  .headerul {
+    gap: 20px;
+  }
+
+  .headerul, .headerli {
+    display: block;
+    text-align: center;
+  }
+
+  .imagge2 img,
+  .imagge3 img,
+  .imagge4 img,
+  .imagge5 img,
+  .imagge6 img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0;
+  }
+
+  main h1 {
+    font-size: 28px;
+    width: 100%;
+    top: 680px;
+    text-align: center;
+  }
+
+  footer{
+    display: none;
+  }
+
+  .hh3, .hh4, .hh5, .hh6 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .lastl, .lastl1, .lastl2, .lastl3 {
+    position: relative;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .about,
+  .mission,
+  .vision {
+    padding: 40px;
+  }
+}
+
+// Медиазапросы для мобильных устройств
+@media (max-width: 600px) {
+  .headerul {
+    flex-direction: column;
+  }
+
+  main h1 {
+    font-size: 24px;
+    top: 740px;
+  }
+
+  .photo {
+    width: 100%;
+  }
+
+  .about,
+  .mission,
+  .vision {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .footerpl1 {
+    font-size: 14px;
+  }
+
+  .lastl, .lastl1, .lastl2, .lastl3 {
+    font-size: 12px;
+  }
+}
