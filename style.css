@@ -82,7 +82,7 @@ main h1 {
   width: 100%;
   height: 644px;
   left: 0px;
-  top: 2574px;
+  top: 2974px;
 }
 
 .footp {
@@ -402,4 +402,55 @@ hr {
   .lastl, .lastl1, .lastl2, .lastl3 {
     font-size: 12px;
   }
+}
+.registration {
+  padding: 50px 0;
+}
+
+.registration form {
+  max-width: 800px;
+  padding: 50px 70px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #084935;
+}
+
+.registration form h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+  transition: all 0.5s;
+}
+.registration form h3:hover {
+  letter-spacing: 20px;
+}
+
+.registration .item {
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+}
+
+.registration .create-account {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #703412;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  transition: all 0.3s;
+}
+.registration .create-account:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+  .registration form {
+    padding: 50px 20px;
+  }
+}
+.lastli {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
