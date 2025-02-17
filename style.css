@@ -1,3 +1,120 @@
+@charset "UTF-8";
+body {
+  background-color: #FEFBF1;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #703412;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+.headerul,
+.headerli {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.headerul,
+.headerli a {
+  text-decoration: none;
+  color: #703412;
+  background-color: #FEFBF1;
+  transition: all 0.5s;
+}
+
+body.dark .headerul,
+body.dark .headerli a {
+  color: white;
+  background-color: black;
+}
+
+.headerli a:hover {
+  background-color: #703412;
+  color: #FEFBF1;
+  padding: 8px;
+  border-radius: 8px;
+  transform: scale(1.02);
+  border: 2px double #703412;
+  outline: 2px solid #703412;
+  outline-offset: 10px;
+}
+
+body.dark .headerli a:hover {
+  background-color: white;
+  color: black;
+  border: 2px double white;
+  outline: 2px solid white;
+}
+
+.footer {
+  background-color: #084935;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 644px;
+  left: 0px;
+  top: 2974px;
+}
+
+body.dark .footer {
+  background-color: #4A90E2;
+  color: white;
+}
+
+footer p, .pp, .hh3, .hh4, .hh5, .hh6 {
+  color: white;
+}
+
+body.dark footer p, body.dark .h00, body.dark h1, body.dark .pp, body.dark .hh3, body.dark .hh4, body.dark .hh5, body.dark .hh6 {
+  color: white;
+}
+
+body.dark .about, body.dark .mission, body.dark .vision {
+  background-color: white;
+  color: black;
+}
+
+body.dark .registration form {
+  background-color: #4A90E2;
+  color: white;
+}
+
+body.dark .registration .create-account {
+  color: black;
+  background-color: white;
+}
+
+/* Стилі для перемикача теми */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #703412;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  z-index: 9999;
+}
+
+body.dark .theme-toggle {
+  background-color: white;
+  color: black;
+}
+
 body {
   background-color: #FEFBF1;
   font-family: "Roboto", serif;
@@ -339,7 +456,8 @@ hr {
   .headerul {
     gap: 20px;
   }
-  .headerul, .headerli {
+  .headerul,
+  .headerli {
     display: block;
     text-align: center;
   }
@@ -362,11 +480,17 @@ hr {
   footer {
     display: none;
   }
-  .hh3, .hh4, .hh5, .hh6 {
+  .hh3,
+  .hh4,
+  .hh5,
+  .hh6 {
     text-align: center;
     width: 100%;
   }
-  .lastl, .lastl1, .lastl2, .lastl3 {
+  .lastl,
+  .lastl1,
+  .lastl2,
+  .lastl3 {
     position: relative;
     left: 0;
     top: 0;
@@ -399,7 +523,10 @@ hr {
   .footerpl1 {
     font-size: 14px;
   }
-  .lastl, .lastl1, .lastl2, .lastl3 {
+  .lastl,
+  .lastl1,
+  .lastl2,
+  .lastl3 {
     font-size: 12px;
   }
 }
@@ -453,4 +580,28 @@ hr {
 }
 .lastli {
   cursor: pointer;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #703412;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+}
+
+body.dark .scroll-to-top {
+  color: black;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

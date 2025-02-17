@@ -4,13 +4,139 @@ $footer: #084935;
 $white: white;
 $here: rgba(255, 255, 255, 0.72);
 
+
+
+$bg_dark: black;
+$text_dark: white;
+$footer_dark: #4A90E2;
+
 body {
   background-color: $bg;
   font-family: "Roboto", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: "wdth"100;
+  color: $text;
+}
+
+body.dark {
+  background-color: $bg_dark;
+  color: $text_dark;
+}
+
+.headerul,
+.headerli {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.headerul,
+.headerli a {
+  text-decoration: none;
+  color: $text;
+  background-color: $bg;
+  transition: all 0.5s;
+}
+
+body.dark .headerul,
+body.dark .headerli a {
+  color: $text_dark;
+  background-color: $bg_dark;
+}
+
+.headerli a:hover {
+  background-color: $text;
+  color: $bg;
+  padding: 8px;
+  border-radius: 8px;
+  transform: scale(1.02);
+  border: 2px double $text;
+  outline: 2px solid $text;
+  outline-offset: 10px;
+}
+
+body.dark .headerli a:hover {
+  background-color: $text_dark;
+  color: $bg_dark;
+  border: 2px double $text_dark;
+  outline: 2px solid $text_dark;
+}
+
+.footer {
+  background-color: $footer;
+  color: $white;
+  position: absolute;
+  width: 100%;
+  height: 644px;
+  left: 0px;
+  top: 2974px;
+}
+
+body.dark .footer {
+  background-color: $footer_dark;
+  color: $white;
+}
+
+// Інші елементи також переключаємо на темну тему
+footer p, .pp, .hh3, .hh4, .hh5, .hh6 {
+  color: $white;
+}
+
+body.dark footer p, body.dark .h00, body.dark h1,body.dark .pp, body.dark .hh3, body.dark .hh4, body.dark .hh5, body.dark .hh6 {
+  color: $text_dark;
+}
+
+body.dark .about, body.dark .mission, body.dark .vision{
+  background-color: $text_dark;
+  color: $bg_dark;
+}
+
+body.dark .registration form{
+  background-color: $footer_dark;
+  color: $text_dark;
+}
+
+body.dark .registration .create-account{
+
+color: $bg_dark;
+background-color: white;
+}
+/* Стилі для перемикача теми */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: $text;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  z-index: 9999;
+}
+
+body.dark .theme-toggle {
+  background-color: $text_dark;
+  color: $bg_dark;
+}
+
+
+
+
+body {
+  background-color: $bg;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth"100;
 }
 
 .headerul,
@@ -272,6 +398,7 @@ hr {
 .photo {
   transition: all 0.5s;
   opacity: 80%;
+
   &:hover {
     opacity: 1;
   }
@@ -310,6 +437,7 @@ hr {
     max-width: 800px;
     margin: 0 auto;
   }
+
   &:hover {
     transition: transform 0.5s;
     transform: scale(1.05);
@@ -334,7 +462,8 @@ hr {
     gap: 20px;
   }
 
-  .headerul, .headerli {
+  .headerul,
+  .headerli {
     display: block;
     text-align: center;
   }
@@ -357,16 +486,22 @@ hr {
     text-align: center;
   }
 
-  footer{
+  footer {
     display: none;
   }
 
-  .hh3, .hh4, .hh5, .hh6 {
+  .hh3,
+  .hh4,
+  .hh5,
+  .hh6 {
     text-align: center;
     width: 100%;
   }
 
-  .lastl, .lastl1, .lastl2, .lastl3 {
+  .lastl,
+  .lastl1,
+  .lastl2,
+  .lastl3 {
     position: relative;
     left: 0;
     top: 0;
@@ -407,64 +542,92 @@ hr {
     font-size: 14px;
   }
 
-  .lastl, .lastl1, .lastl2, .lastl3 {
+  .lastl,
+  .lastl1,
+  .lastl2,
+  .lastl3 {
     font-size: 12px;
   }
 }
 
 
-.registration{
-  padding:50px 0;
+.registration {
+  padding: 50px 0;
 }
 
 .registration form {
-  max-width:800px;
-  padding:50px 70px;
-  border-radius:10px;
-  box-shadow:4px 4px 15px rgba(0, 0, 0, 0.2);
-  background-color:$footer;
+  max-width: 800px;
+  padding: 50px 70px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: $footer;
 }
 
 .registration form h3 {
-  font-weight:bold;
-  margin-bottom:30px;
+  font-weight: bold;
+  margin-bottom: 30px;
   color: $white;
   transition: all 0.5s;
 
-  &:hover{
+  &:hover {
     letter-spacing: 20px;
   }
 }
 
 
 .registration .item {
-  border-radius:10px;
-  margin-bottom:25px;
-  padding:10px 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
 }
 
 .registration .create-account {
-  border-radius:30px;
-  padding:10px 20px;
-  font-size:18px;
-  font-weight:bold;
-  background-color:$text;
-  border:none;
-  color:white;
-  margin-top:20px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: $text;
+  border: none;
+  color: white;
+  margin-top: 20px;
   transition: all 0.3s;
-  &:hover{
+
+  &:hover {
     transform: scale(1.1);
-    
+
   }
 }
 
 @media (max-width: 576px) {
   .registration form {
-    padding:50px 20px;
+    padding: 50px 20px;
   }
 }
 
-.lastli{
+.lastli {
   cursor: pointer;
 }
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: $text;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+}
+body.dark .scroll-to-top{
+  color: $bg_dark;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
+

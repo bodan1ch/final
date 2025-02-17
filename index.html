@@ -23,6 +23,7 @@
       </ul>
     </nav>
   </header>
+  <button class="theme-toggle" onclick="toggleTheme()">Змінити тему</button>
   <section class="start">
     <p class="pp">BUSINESS THOUGHTS 💭</p>
 
@@ -79,7 +80,7 @@
     
     <section class="formreg">
       <div class="registration">
-    <form>
+    <form class="contactForm">
         <h3 class="text-center">Bussiness account</h3>
         <div class="form-group">
             <input class="item" type="text" name="username" maxlength="15" minlength="4" pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Username" required>
@@ -96,6 +97,9 @@
     </form>
 </div>
     </section>
+
+
+
 
     <footer class="footer">
       <p class="footp">CONTACT</p>
@@ -138,13 +142,11 @@
 
   </main>
 
+  
 
 
 
-
-
-
-
+<button id="scrollToTopBtn" class="scroll-to-top hidden">⬆</button>
 <script src="./script.js"></script>
 </body>
 
